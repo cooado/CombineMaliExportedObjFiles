@@ -65,7 +65,6 @@ def writeObj(pos_, uv_, faces_, filePath):
     for uv in uv_:
         # flip v
         v = uv[1]
-        v = 1 - v
         f.write(u"vt " + unicode(uv[0]) + u" " + unicode(v) + " " + unicode(uv[2]) + "\n")
 
     f.write("\n")
